@@ -1,26 +1,27 @@
 .list-wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   margin-top: 10rem;
+  margin-left: 5.8rem;
 }
-.price
-{
-background: #fff;
-width: 20%;
-justify-content: center;
-align-items: center;
-border-radius: 7rem;
-position:absolute;
-font-size: 1.1em;
-top:7.5rem;
-right: 13px;
-} 
-.brand
-{
-background: #fff;
-position:absolute;
-font-size:1.1em;
-top:.5rem;
-left:.5rem;
-} 
+
+.price {
+  background: #fff;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7rem;
+  position: absolute;
+  font-size: 1.1em;
+  top: 7.5rem;
+  right: 13px;
+}
+
+.brand {
+  background: #fff;
+  position: absolute;
+  font-size: 1.1em;
+  top: .5rem;
+  left: .5rem;
+}

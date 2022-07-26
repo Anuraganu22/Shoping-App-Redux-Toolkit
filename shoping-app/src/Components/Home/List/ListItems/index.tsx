@@ -9,13 +9,13 @@ import { getAllproducts } from '../../../../Redux/Slices/productSlice';
 type Props = {}
 
 const ListItem = (props: Props) => {
-    const {products} =useSelector(getAllproducts);
-   console.log(products,"MY PRODUCTS")
+  const { products } = useSelector(getAllproducts);
+  console.log(products, "MY PRODUCTS")
   return (
     <>
-    {
-        products.map((item:any)=> {
-            return <Card sx={{ maxWidth:300 }}>
+      {
+        products.map((item: any) => {
+          return <Card sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -24,23 +24,23 @@ const ListItem = (props: Props) => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                {item.pro_name} 
+                  {item.pro_name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 
+                  Lizards are a widespread group of squamate reptiles, with over 6,000
                 </Typography>
                 <div className='brand'>
-                {item.pro_Brand}
+                  {item.pro_Brand}
                 </div>
                 <div className='price'>
-                {item.pro_price}/-₹
+                  {item.pro_price}/-₹
                 </div>
               </CardContent>
             </CardActionArea>
           </Card>
         })
-    }   
-     
+      }
+
     </>
   )
 }

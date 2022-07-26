@@ -13,9 +13,13 @@ const productSlice = createSlice({
         // creating action
         addProducts: (state, { payload }) => {
             state.products = payload
-        }
+        },
+         brandFilter:(state,{payload}) =>{
+            state.products =payload
+         }
+    
     }
 });
-export const { addProducts } = productSlice.actions
+export const { addProducts,  brandFilter } = productSlice.actions
 export const getAllproducts = (state:RootState) => state.products
 export default productSlice.reducer;

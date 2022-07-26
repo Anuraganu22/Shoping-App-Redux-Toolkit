@@ -5,8 +5,8 @@ import './Style.css'
 type Props = {}
 const List = (props: Props) => {
   return (
-    <div className='list-wrap'> 
-      <ListItem/>
+    <div className='list-wrap'>
+      <ListItem />
     </div>
   )
 }
